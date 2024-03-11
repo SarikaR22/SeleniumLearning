@@ -12,21 +12,26 @@ public class MultiSelectDropdown {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
-		driver.get("C:\\Users\\Administrator\\Downloads\\Sample.html");
-		WebElement dropdown = driver.findElement(By.name("my-select"));
+		driver.get("https://demoqa.com/select-menu");
+		WebElement dropdown = driver.findElement(By.id("cars"));
         Select option = new Select(dropdown);
-        option.selectByIndex(2);
-        System.out.println(option.getFirstSelectedOption().getText());
-//        List<WebElement> selected= option.getAllSelectedOptions();
-//      for(WebElement el:selected) {
-//    	  System.out.println(el.getText());
-//      }
+        option.selectByVisibleText("Volvo");
+        option.selectByVisibleText("Audi");
+//        System.out.println(option.getFirstSelectedOption().getText());
+        List<WebElement> selected= option.getAllSelectedOptions();
         
-        WebElement disabledElement=   driver.findElement(By.name("my-disabled"));
-       Boolean isEnabled=  disabledElement.isEnabled();
-       System.out.println(isEnabled);
-        
-	
+      for(WebElement el:selected) {
+    	  System.out.println(el.getText());
+      }
+      option.deselectAll();
+      
+
+      
+//        WebElement disabledElement=   driver.findElement(By.name("my-disabled"));
+//       Boolean isEnabled=  disabledElement.isEnabled();
+//       System.out.println(isEnabled);
+//        
+//	
 	
 	}
 
