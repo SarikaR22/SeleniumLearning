@@ -42,7 +42,8 @@ public class TestNGExample {
         checkboxElement.click();
 //        System.out.println("After unselect "  +checkboxElement.isSelected());
         Assert.assertTrue((checkboxElement.isSelected()));
-        
+        String destination = Screenshot.captureScreenShot(checkboxElement, "CheckboxSS");
+        System.out.println(destination);
 	}
 	@AfterClass
 	public void tearDown(){
