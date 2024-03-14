@@ -1,125 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T07:24:59 GMT" name="Suite" finished-at="2024-03-13T07:25:08 GMT" duration-ms="9556">
+  <suite started-at="2024-03-14T07:15:16 GMT" name="Default suite" finished-at="2024-03-14T07:15:20 GMT" duration-ms="3697">
     <groups>
     </groups>
-    <test started-at="2024-03-13T07:24:59 GMT" name="Test" finished-at="2024-03-13T07:25:08 GMT" duration-ms="9556">
-      <class name="DifferentElements.TestNGExampleFirefox">
-        <test-method is-config="true" signature="setup()[pri:0, instance:DifferentElements.TestNGExampleFirefox@1e0b4072]" started-at="2024-03-13T07:25:02 GMT" name="setup" finished-at="2024-03-13T07:25:05 GMT" duration-ms="3310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testCase1()[pri:0, instance:DifferentElements.TestNGExampleFirefox@1e0b4072]" started-at="2024-03-13T07:25:05 GMT" name="testCase1" finished-at="2024-03-13T07:25:06 GMT" duration-ms="1035" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method signature="testCase2()[pri:0, instance:DifferentElements.TestNGExampleFirefox@1e0b4072]" started-at="2024-03-13T07:25:06 GMT" name="testCase2" finished-at="2024-03-13T07:25:06 GMT" duration-ms="281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-        <test-method signature="testCase3()[pri:0, instance:DifferentElements.TestNGExampleFirefox@1e0b4072]" started-at="2024-03-13T07:25:06 GMT" name="testCase3" finished-at="2024-03-13T07:25:07 GMT" duration-ms="222" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at DifferentElements.TestNGExampleFirefox.testCase3(TestNGExampleFirefox.java:46)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DifferentElements.TestNGExampleFirefox@1e0b4072]" started-at="2024-03-13T07:25:07 GMT" name="tearDown" finished-at="2024-03-13T07:25:08 GMT" duration-ms="1346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- DifferentElements.TestNGExampleFirefox -->
+    <test started-at="2024-03-14T07:15:16 GMT" name="Default test" finished-at="2024-03-14T07:15:20 GMT" duration-ms="3697">
       <class name="DifferentElements.TestNGExample">
-        <test-method is-config="true" signature="setup()[pri:0, instance:DifferentElements.TestNGExample@7b36aa0c]" started-at="2024-03-13T07:24:59 GMT" name="setup" finished-at="2024-03-13T07:25:01 GMT" duration-ms="2186" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:16 GMT" name="setup" finished-at="2024-03-14T07:15:19 GMT" duration-ms="2610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCase1()[pri:0, instance:DifferentElements.TestNGExample@7b36aa0c]" started-at="2024-03-13T07:25:01 GMT" name="testCase1" finished-at="2024-03-13T07:25:02 GMT" duration-ms="778" status="PASS">
+        <test-method signature="testCase1()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:19 GMT" name="testCase1" finished-at="2024-03-14T07:15:20 GMT" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method signature="testCase2()[pri:0, instance:DifferentElements.TestNGExample@7b36aa0c]" started-at="2024-03-13T07:25:02 GMT" name="testCase2" finished-at="2024-03-13T07:25:02 GMT" duration-ms="112" status="PASS">
+        <test-method signature="testCase2()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:20 GMT" name="testCase2" finished-at="2024-03-14T07:15:20 GMT" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method signature="testCase3()[pri:0, instance:DifferentElements.TestNGExample@7b36aa0c]" started-at="2024-03-13T07:25:02 GMT" name="testCase3" finished-at="2024-03-13T07:25:02 GMT" duration-ms="68" status="FAIL">
+        <test-method signature="testCase3()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:20 GMT" name="testCase3" finished-at="2024-03-14T07:15:20 GMT" duration-ms="62" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
 at DifferentElements.TestNGExample.testCase3(TestNGExample.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -129,11 +65,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DifferentElements.TestNGExample@7b36aa0c]" started-at="2024-03-13T07:25:02 GMT" name="tearDown" finished-at="2024-03-13T07:25:02 GMT" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:20 GMT" name="tearDown" finished-at="2024-03-14T07:15:20 GMT" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- DifferentElements.TestNGExample -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
