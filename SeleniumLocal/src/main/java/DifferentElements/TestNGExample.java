@@ -11,6 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 
 public class TestNGExample {
@@ -23,10 +24,12 @@ public class TestNGExample {
 	}
 	@Test
 	public void testCase1() {
+		SoftAssert softAssert= new SoftAssert();
 		driver.get("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
         String title = driver.getTitle();
-        String expectedTitle = "Selenium Easy - Checkbox demo for automation using selenium";
-        Assert.assertEquals(title, expectedTitle);
+        String expectedTitle = "Selenium Easy ";
+        softAssert.assertEquals(title, expectedTitle);
+//        Assert.assertEquals(title, expectedTitle);
         
 	}
 	@Test

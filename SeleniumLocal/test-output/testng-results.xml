@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-14T07:15:16 GMT" name="Default suite" finished-at="2024-03-14T07:15:20 GMT" duration-ms="3697">
+  <suite started-at="2024-03-15T06:41:17 GMT" name="Suite" finished-at="2024-03-15T06:41:21 GMT" duration-ms="3333">
     <groups>
     </groups>
-    <test started-at="2024-03-14T07:15:16 GMT" name="Default test" finished-at="2024-03-14T07:15:20 GMT" duration-ms="3697">
+    <test started-at="2024-03-15T06:41:17 GMT" name="Test" finished-at="2024-03-15T06:41:21 GMT" duration-ms="3333">
       <class name="DifferentElements.TestNGExample">
-        <test-method is-config="true" signature="setup()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:16 GMT" name="setup" finished-at="2024-03-14T07:15:19 GMT" duration-ms="2610" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-15T06:41:17 GMT" name="setup" finished-at="2024-03-15T06:41:19 GMT" duration-ms="2197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCase1()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:19 GMT" name="testCase1" finished-at="2024-03-14T07:15:20 GMT" duration-ms="769" status="PASS">
+        <test-method signature="testCase1()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-15T06:41:19 GMT" name="testCase1" finished-at="2024-03-15T06:41:20 GMT" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method signature="testCase2()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:20 GMT" name="testCase2" finished-at="2024-03-14T07:15:20 GMT" duration-ms="103" status="PASS">
+        <test-method signature="testCase2()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-15T06:41:20 GMT" name="testCase2" finished-at="2024-03-15T06:41:20 GMT" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-        <test-method signature="testCase3()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:20 GMT" name="testCase3" finished-at="2024-03-14T07:15:20 GMT" duration-ms="62" status="FAIL">
+        <test-method signature="testCase3()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-15T06:41:20 GMT" name="testCase3" finished-at="2024-03-15T06:41:20 GMT" duration-ms="64" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -30,7 +30,7 @@ at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertTrue(Assert.java:45)
 at org.testng.Assert.assertTrue(Assert.java:55)
-at DifferentElements.TestNGExample.testCase3(TestNGExample.java:44)
+at DifferentElements.TestNGExample.testCase3(TestNGExample.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,11 +65,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-14T07:15:20 GMT" name="tearDown" finished-at="2024-03-14T07:15:20 GMT" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DifferentElements.TestNGExample@6a6afff2]" started-at="2024-03-15T06:41:20 GMT" name="tearDown" finished-at="2024-03-15T06:41:21 GMT" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- DifferentElements.TestNGExample -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

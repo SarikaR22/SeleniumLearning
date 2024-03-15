@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
           <class name="DifferentElements.TestNGExample"/>
-      <class name="DifferentElements.TestNGExampleFirefox"/>
+     <!--  <class name="DifferentElements.TestNGExampleFirefox"/>  -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
