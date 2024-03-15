@@ -6,8 +6,10 @@
       <class name="DifferentElements.TestNGExample">
         <methods>
           <include name="testCase3"/>
+          <include name="testCase2"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="testCase1"/>
         </methods>
       </class> <!-- DifferentElements.TestNGExample -->
     </classes>
