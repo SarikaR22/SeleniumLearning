@@ -47,36 +47,42 @@ public class RedBusTes {
 		}
 		
 		WebElement dateBox = driver.findElement(By.xpath("//*[contains(@class,'sc-kAzzGY')]"));
-		
-		dateBox.click();
-		String expectedMonth = "Jun 2024";
-		WebElement monthpicker = driver.findElement(By.xpath("//*[contains(@class,'DayNavigator__IconBlock')][2]"));
-		String currentMonth = monthpicker.getText();
-	    List <WebElement> datePicker = driver.findElements(By.xpath("//*[contains(@class,'DayTiles__CalendarDaysSpan')]"));
-		System.out.println(currentMonth);
-	    WebElement nextButton = driver.findElement(By.xpath("//*[contains(@class,'DayNavigator__IconBlock')][3]"));
-	    
-	    if(!currentMonth.equalsIgnoreCase(expectedMonth)){
-	    	action.moveToElement(nextButton).click().perform();
-
-	    	nextButton.click();
-	    	String newMonth = monthpicker.getText();
-	    	System.out.println("New month shown " +newMonth);	
-	
-//	    	if(newMonth.equalsIgnoreCase(expectedMonth)) 
-//		    {
-//            System.out.println("We are in the correct month and year");
-//            
-//        	    	}
-//	    	
-//	    		currentMonth =newMonth; 
+       WebElement dateToSelect = driver.findElement(By.xpath("//*[contains(@class,'DayTiles__CalendarDaysBlock')]/span[contains(text(),'18')]"));
+       WebElement searchButton = driver.findElement(By.id("search_button"));
+       dateToSelect.click();
+       searchButton.click();
+       List<WebElement> busList = driver.findElements(By.xpath("//*[contains(@class,'travels')]"));
+       for(WebElement busName:busList) {
+    	   System.out.println("Bus Names are "+busName.getText());
+       }
+//		String expectedMonth = "Apr 2024";
+//		WebElement monthpicker = driver.findElement(By.xpath("//*[contains(@class,'DayNavigator__IconBlock')][2]"));
+//		String currentMonth = monthpicker.getText();
+//    	WebElement dateToSelect = driver.findElement(By.xpath("//*[contains(@class,'DayTiles__CalendarDaysBlock')]/span[contains(text(),'18')]"));
+//		System.out.println(currentMonth);
+//	    WebElement nextButton = driver.findElement(By.xpath("//*[contains(@class,'DayNavigator__IconBlock')][3]"));
+//	    if(!currentMonth.equalsIgnoreCase(expectedMonth)){
+//	    	action.moveToElement(nextButton).click().perform();
+//   	    	String newMonth = monthpicker.getText();
+//	    	System.out.println("New month shown " +newMonth);
+//	    	}
+//		WebElement monthToSelect = driver.findElement(By.xpath("//*[contains(@class,'DayNavigator__IconBlock')][2]"));
+//		String currentMonthToSelect = monthToSelect.getText();
+//
+//		WebElement dateToSelect = driver.findElement(By.xpath("//*[contains(@class,'DayTiles__CalendarDaysBlock')]/span[contains(text(),'18')]"));
+//
+//	  	  if(currentMonthToSelect.equalsIgnoreCase(expectedMonth)){
+//	           System.out.println("We are in the correct month and year");
+//	    	    dateToSelect.click();
+//
+//       }
 //	    
-	    	}
+//	    	}
 
 	    }
 	    
 	    	
-	 
-}    	
+}
+	
 		    
 
