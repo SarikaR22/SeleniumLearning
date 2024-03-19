@@ -19,14 +19,14 @@ public class DataProviderExample {
 	 * { System.out.println(n1 + " " + n2); }
 	 */
 	 
-	// @DataProvider(name = "test1")
-		//public Object[][] createData1() throws IOException {
+	 @DataProvider(name = "test1")
+		public Object[][] createData1() throws IOException {
 		 
 		 ReadExcelExample read= new ReadExcelExample();
-		// Object [] [] data=read.readExcelData();
-		//	return data;
+		 Object [] [] data=read.readExcelData("./Data1.xlsx", "sheet2");
+			return data;
 		 
-	//	}
+		}
 		 @Test(dataProvider = "test1")
 		 public void verifyData1(String n1, String n2, String n3) {
 		  System.out.println(n1 + " " + n2 + ""+n3);
