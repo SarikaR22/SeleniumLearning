@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -31,9 +32,12 @@ public class GoogleSearchTest {
 		}
 		@Test(dataProvider="test1")
 		public void TestCase1(String keyword) {
-			GoogleSearchPage browser= new GoogleSearchPage(driver);
-			browser.NavigateGoogleSearchPage();
-			browser.typeSearchKeyword(keyword);
+//			GoogleSearchPage browser= new GoogleSearchPage(driver);
+//			browser.NavigateGoogleSearchPage();
+//			String title = driver.getTitle();
+//			Assert.assertEquals(title, "Google1");
+//			browser.typeSearchKeyword(keyword);
+			Assert.fail();
 
 
 
