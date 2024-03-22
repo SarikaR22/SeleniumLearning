@@ -6,9 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = "src//test//resources//features//Login.feature"
 ,glue = "stepDefs",
 monochrome=true,
-dryRun=false,
-plugin={"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+dryRun=false
 )
+//plugin={"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
 public class UserAuthTest extends AbstractTestNGCucumberTests {
 
 }

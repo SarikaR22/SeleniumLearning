@@ -1,8 +1,10 @@
 package stepDefs;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -36,6 +38,8 @@ public void i_click_the_login_button() {
 }
 @Then("I should be redirected to the dashboard")
 public void i_should_be_redirected_to_the_dashboard() {
+	String title=driver.getTitle();
+	Assert.assertEquals(title, "Swag Labs1");
 	System.out.println("I am redirected to the  dashboard ");
     // Write code here that turns the phrase above into concrete actions
 //    throw new io.cucumber.java.PendingException();
